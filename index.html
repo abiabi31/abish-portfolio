@@ -9,293 +9,389 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Reshma</h2>
+    <!-- Left Side Navigation -->
+    <nav class="vertical-nav">
+        <div class="nav-logo">
+            <div class="logo-circle">
+                <span>R</span>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item active">
+                <a href="#home" class="nav-link" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-link" data-section="about">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#skills" class="nav-link" data-section="skills">
+                    <i class="fas fa-code"></i>
+                    <span>Skills</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#projects" class="nav-link" data-section="projects">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+        <div class="nav-footer">
+            <div class="theme-toggle">
+                <button class="theme-btn" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    
+                </button>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/reshma-r-b27a1a249/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/rreshmaa6/rreshmaa6" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        Hi, I'm <span class="highlight">Reshma</span>
-                    </h1>
-                    <h2 class="hero-subtitle">Full Stack Developer</h2>
-                    <p class="hero-description">
-                        Passionate about creating innovative web applications and mobile solutions. 
-                        With over 2 years of experience at Huewine Technologies, I specialize in 
-                        modern web development and app development.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="#about" class="btn btn-secondary">Learn More</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="image-container">
-                        <img src="profile-image.jpg" alt="Reshma - Professional Portrait" class="profile-img">
-                        <div class="image-overlay"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress">
+        <div class="progress-bar"></div>
+    </div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Get to know me better</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Professional Background</h3>
-                    <p>
-                        I am a dedicated Full Stack Developer with over 2 years of professional experience 
-                        at Huewine Technologies. My journey in software development has been focused on 
-                        creating robust, scalable, and user-friendly applications.
-                    </p>
-                    <p>
-                        I have successfully worked on multiple projects including Lab, Inventory, and Billing 
-                        systems, gaining comprehensive knowledge in various aspects of software development. 
-                        My passion lies in solving complex problems through clean, efficient code and 
-                        innovative solutions.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h4>2+</h4>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat">
-                            <h4>3+</h4>
-                            <p>Major Projects</p>
-                        </div>
-                        <div class="stat">
-                            <h4>100%</h4>
-                            <p>Client Satisfaction</p>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section active">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="greeting">Hello, I'm</div>
+                        <h1 class="hero-name">Reshma</h1>
+                        <h2 class="hero-role">Full Stack Developer</h2>
+                        <p class="hero-description">
+                            Passionate about creating innovative web applications and mobile solutions. 
+                            With over 2 years of experience at Huewine Technologies.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">
+                                <span>View My Work</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <span>Get In Touch</span>
+                                <i class="fas fa-envelope"></i>
+                            </a>
                         </div>
                     </div>
+                    <div class="hero-image">
+                        <!-- <div class="image-container"> -->
+                            <!-- <img src="/Users/reshma/Documents/Portofolio/Profile.jpeg" alt="Reshma" class="profile-img"> -->
+                            <!-- <div class="image-overlay"> -->
+                                <div class="floating-tech">
+                                    <div class="tech-icon html"><i class="fab fa-html5"></i></div>
+                                    <div class="tech-icon react"><i class="fab fa-react"></i></div>
+                                    <div class="tech-icon js"><i class="fab fa-js-square"></i></div>
+                                    <div class="tech-icon java"><i class="fab fa-java"></i></div>
+                                </div>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="scroll-text">Scroll to explore</div>
+                    <div class="scroll-arrow">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Skills & Technologies</h2>
-                <p class="section-subtitle">Technologies I work with</p>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h3>HTML</h3>
-                    <p>Semantic markup and structure for modern web applications with accessibility best practices.</p>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-line"></div>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-react"></i>
-                    </div>
-                    <h3>React</h3>
-                    <p>Building dynamic and interactive user interfaces with component-based architecture and state management.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-js-square"></i>
-                    </div>
-                    <h3>JavaScript</h3>
-                    <p>Modern ES6+ features, asynchronous programming, and creating responsive web applications.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <h3>CSS</h3>
-                    <p>Responsive design, animations, and modern styling techniques for beautiful user interfaces.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-java"></i>
-                    </div>
-                    <h3>Java</h3>
-                    <p>Object-oriented programming, enterprise application development, and robust backend solutions.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3>Spring Boot</h3>
-                    <p>Rapid application development with microservices architecture and enterprise-grade solutions.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3>Reactive Spring Boot</h3>
-                    <p>Asynchronous, non-blocking applications with reactive programming patterns for high performance.</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <h3>GitHub</h3>
-                    <p>Version control, collaborative development, and project management using Git workflows.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Professional Experience</h2>
-                <p class="section-subtitle">My journey at Huewine Technologies</p>
-            </div>
-            <div class="experience-content">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3>Full Stack Developer</h3>
-                            <h4>Huewine Technologies</h4>
-                            <span class="timeline-date">2022 - Present</span>
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="intro-text">
+                            <h3>Passionate Developer</h3>
                             <p>
-                                Working as a Full Stack Developer with expertise in both frontend and backend technologies. 
-                                Successfully delivered multiple projects and contributed to the company's growth.
+                                I am a dedicated Full Stack Developer with over 2 years of professional experience 
+                                at Huewine Technologies. My journey in software development has been focused on 
+                                creating robust, scalable, and user-friendly applications.
+                            </p>
+                            <p>
+                                I have successfully worked on multiple projects including Lab, Inventory, and Billing 
+                                systems, gaining comprehensive knowledge in various aspects of software development.
                             </p>
                         </div>
+                        <!-- <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="2">0</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-target="100">0</div>
+                                <div class="stat-label">Major Projects</div>
+                            </div>
+                        </div> -->
                     </div>
-                </div>
-                <div class="projects-section">
-                    <h3>Key Projects</h3>
-                    <div class="projects-grid">
-                        <div class="project-card">
-                            <div class="project-icon">
-                                <i class="fas fa-flask"></i>
+                    <div class="about-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Full Stack Developer</h4>
+                                <h5>Huewine Technologies</h5>
+                                <span class="timeline-date">2023 - Present</span>
+                                <p>Working on enterprise applications and contributing to company growth.</p>
                             </div>
-                            <h4>Lab Management System</h4>
-                            <p>Developed a comprehensive laboratory management system with real-time data tracking and reporting capabilities.</p>
                         </div>
-                        <div class="project-card">
-                            <div class="project-icon">
-                                <i class="fas fa-boxes"></i>
-                            </div>
-                            <h4>Inventory Management</h4>
-                            <p>Created an efficient inventory management solution with automated tracking and optimization features.</p>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-icon">
-                                <i class="fas fa-receipt"></i>
-                            </div>
-                            <h4>Billing System</h4>
-                            <p>Built a robust billing system with payment processing and financial reporting functionalities.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Ready to work together?</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>
-                        I'm always interested in new opportunities and exciting projects. 
-                        Whether you need web development or app development services, 
-                        I'd love to hear from you!
-                    </p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>rreshmaa6@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Available for Remote Work</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/reshma-r-b27a1a249/" class="social-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/rreshmaa6/rreshmaa6" class="social-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 Reshma. All rights reserved.</p>
-                <p>Built with ❤️ using HTML, CSS & JavaScript</p>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="html">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3>HTML</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-level">Expert</span>
+                                <span class="skill-years">2+ years</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="react">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h3>React</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-level">Advanced</span>
+                                <span class="skill-years">2+ years</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="js">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <h3>JavaScript</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-level">Advanced</span>
+                                <span class="skill-years">2+ years</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="css">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h3>CSS</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-level">Expert</span>
+                                <span class="skill-years">2+ years</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="java">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h3>Java</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-level">Intermediate</span>
+                                <span class="skill-years">2+ years</span>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="spring">
+                            <div class="skill-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3>Spring Boot</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78"></div>
+                            </div>
+                            <div class="skill-details">
+                                <span class="skill-level">Intermediate</span>
+                                <span class="skill-years">2+ years</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="projects-container">
+                    <div class="projects-carousel">
+                        <div class="project-card active">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <div class="project-tech">
+                                        <span class="tech-tag">React.js</span>
+                                        <span class="tech-tag">Spring Boot</span>
+                                        <span class="tech-tag">Postgresql</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3>Lab Management</h3>
+                                <p>Comprehensive laboratory management system with real-time data tracking and reporting capabilities.</p>
+                                <div class="project-details">
+                                    <div class="tech-stack">
+                                        <span class="tech-label">Frontend:</span> React.js
+                                    </div>
+                                    <div class="tech-stack">
+                                        <span class="tech-label">Backend:</span> Spring Boot
+                                    </div>
+                                    <div class="tech-stack">
+                                        <span class="tech-label">Database:</span> Postgresql
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Reactive Spring</span>
+                                        <span class="tech-tag">Backend</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3>Billing Software</h3>
+                                <p>Advanced billing software solution with automated invoice generation and payment processing.</p>
+                                <div class="project-details">
+                                    <div class="tech-stack">
+                                        <span class="tech-label">Backend only:</span> Reactive Spring Developer
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-overlay">
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Spring Boot</span>
+                                        <span class="tech-tag">Backend</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h3>ERP Software</h3>
+                                <p>Enterprise Resource Planning system for comprehensive business management and operations.</p>
+                                <div class="project-details">
+                                    <div class="tech-stack">
+                                        <span class="tech-label">Backend only:</span> Spring Boot
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-line"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's work together</h3>
+                        <p>
+                            I'm always interested in new opportunities and exciting projects. 
+                            Whether you need web development or app development services, 
+                            I'd love to hear from you!
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>rreshmaa6@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Available for Remote Work</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
