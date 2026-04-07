@@ -1,377 +1,473 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reshma - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abish - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Left Side Navigation -->
     <nav class="vertical-nav">
-        <div class="nav-logo">
-            <div class="logo-circle">
-                <span>R</span>
-            </div>
+     <div class="nav-logo">
+  <div class="logo-circle">
+    <img src="7.jpg" alt="Logo" class="logo-img" />
+  </div>
+</div>
+      <ul class="nav-menu">
+        <li class="nav-item active">
+          <a href="#home" class="nav-link" data-section="home">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link" data-section="about">
+            <i class="fas fa-user"></i>
+            <span>About</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link" data-section="skills">
+            <i class="fas fa-code"></i>
+            <span>Skills</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link" data-section="projects">
+            <i class="fas fa-briefcase"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link" data-section="contact">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+      <div class="nav-footer">
+        <div class="theme-toggle">
+          <button class="theme-btn" id="themeToggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </button>
         </div>
-        <ul class="nav-menu">
-            <li class="nav-item active">
-                <a href="#home" class="nav-link" data-section="home">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#about" class="nav-link" data-section="about">
-                    <i class="fas fa-user"></i>
-                    <span>About</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#skills" class="nav-link" data-section="skills">
-                    <i class="fas fa-code"></i>
-                    <span>Skills</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#projects" class="nav-link" data-section="projects">
-                    <i class="fas fa-briefcase"></i>
-                    <span>Projects</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#contact" class="nav-link" data-section="contact">
-                    <i class="fas fa-envelope"></i>
-                    <span>Contact</span>
-                </a>
-            </li>
-        </ul>
-        <div class="nav-footer">
-            <div class="theme-toggle">
-                <button class="theme-btn" id="themeToggle">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
-                    
-                </button>
-            </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/reshma-r-b27a1a249/" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/rreshmaa6/rreshmaa6" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/abishabi/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/rreshmaa6/rreshmaa6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-github"></i>
+          </a>
         </div>
+      </div>
     </nav>
 
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress">
-        <div class="progress-bar"></div>
+      <div class="progress-bar"></div>
     </div>
 
     <!-- Main Content -->
     <main class="main-content">
-        <!-- Hero Section -->
-        <section id="home" class="hero-section active">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <div class="greeting">Hello, I'm</div>
-                        <h1 class="hero-name">Reshma</h1>
-                        <h2 class="hero-role">Full Stack Developer</h2>
-                        <p class="hero-description">
-                            Passionate about creating innovative web applications and mobile solutions. 
-                            With over 2 years of experience at Huewine Technologies.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="#projects" class="btn btn-primary">
-                                <span>View My Work</span>
-                                <i class="fas fa-arrow-right"></i>
-                            </a>
-                            <a href="#contact" class="btn btn-secondary">
-                                <span>Get In Touch</span>
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="hero-image">
-                        <!-- <div class="image-container"> -->
-                            <!-- <img src="/Users/reshma/Documents/Portofolio/Profile.jpeg" alt="Reshma" class="profile-img"> -->
-                            <!-- <div class="image-overlay"> -->
-                                <div class="floating-tech">
-                                    <div class="tech-icon html"><i class="fab fa-html5"></i></div>
-                                    <div class="tech-icon react"><i class="fab fa-react"></i></div>
-                                    <div class="tech-icon js"><i class="fab fa-js-square"></i></div>
-                                    <div class="tech-icon java"><i class="fab fa-java"></i></div>
-                                </div>
-                            <!-- </div> -->
-                        <!-- </div> -->
-                    </div>
-                </div>
-                <div class="scroll-indicator">
-                    <div class="scroll-text">Scroll to explore</div>
-                    <div class="scroll-arrow">
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                </div>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section active">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <div class="hero-headline">
+                <h1 class="headline">
+                  <span class="hello">Hi, I'm</span>
+                  <span class="name"
+                    >Abish
+                    <span class="name-particles">
+                      <span class="name-particle" style="--x: -8px; --y: -18px"
+                        >✨</span
+                      >
+                      <span
+                        class="name-particle"
+                        style="--x: 18px; --y: -10px; animation-delay: 0.2s"
+                        >⚡</span
+                      >
+                      <span
+                        class="name-particle"
+                        style="--x: -16px; --y: 14px; animation-delay: 0.4s"
+                        >★</span
+                      >
+                      <span
+                        class="name-particle"
+                        style="--x: 22px; --y: 8px; animation-delay: 0.6s"
+                        >✦</span
+                      >
+                    </span>
+                  </span>
+                </h1>
+                <div class="headline-underline"></div>
+              </div>
+              <h2 class="hero-role">Frontend Developer</h2>
+              <p class="hero-description">
+                Passionate Frontend Developer skilled in creating scalable and
+                responsive web applications. Bringing 2.9 years of hands-on
+                experience in building high-quality user interfaces.
+              </p>
+              <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                  <span>View My Work</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                  <span>Get In Touch</span>
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">About Me</h2>
-                    <div class="title-line"></div>
-                </div>
-                <div class="about-content">
-                    <div class="about-text">
-                        <div class="intro-text">
-                            <h3>Passionate Developer</h3>
-                            <p>
-                                I am a dedicated Full Stack Developer with over 2 years of professional experience 
-                                at Huewine Technologies. My journey in software development has been focused on 
-                                creating robust, scalable, and user-friendly applications.
-                            </p>
-                            <p>
-                                I have successfully worked on multiple projects including Lab, Inventory, and Billing 
-                                systems, gaining comprehensive knowledge in various aspects of software development.
-                            </p>
-                        </div>
-                        <!-- <div class="stats-grid">
-                            <div class="stat-item">
-                                <div class="stat-number" data-target="2">0</div>
-                                <div class="stat-label">Years Experience</div>
-                            </div>
-                            <div class="stat-item">
-                                <div class="stat-number" data-target="100">0</div>
-                                <div class="stat-label">Major Projects</div>
-                            </div>
-                        </div> -->
+            <div class="hero-image">
+              <div class="image-container">
+                <img
+                  src="Profile.jpeg"
+                  alt="Abish - Professional Portrait"
+                  class="profile-img"
+                />
+                <div class="image-overlay">
+                  <div class="floating-tech">
+                    <div class="tech-icon html">
+                      <i class="fab fa-html5"></i>
                     </div>
-                    <div class="about-timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <h4>Full Stack Developer</h4>
-                                <h5>Huewine Technologies</h5>
-                                <span class="timeline-date">2023 - Present</span>
-                                <p>Working on enterprise applications and contributing to company growth.</p>
-                            </div>
-                        </div>
-
+                    <div class="tech-icon react">
+                      <i class="fab fa-react"></i>
+                    </div>
+                    <div class="tech-icon js">
+                      <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="tech-icon java">
+                      <i class="fab fa-java"></i>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Skills & Technologies</h2>
-                    <div class="title-line"></div>
-                </div>
-                <div class="skills-container">
-                    <div class="skills-grid">
-                        <div class="skill-card" data-skill="html">
-                            <div class="skill-icon">
-                                <i class="fab fa-html5"></i>
-                            </div>
-                            <h3>HTML</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90"></div>
-                            </div>
-                            <div class="skill-details">
-                                <span class="skill-level">Expert</span>
-                                <span class="skill-years">2+ years</span>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="react">
-                            <div class="skill-icon">
-                                <i class="fab fa-react"></i>
-                            </div>
-                            <h3>React</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85"></div>
-                            </div>
-                            <div class="skill-details">
-                                <span class="skill-level">Advanced</span>
-                                <span class="skill-years">2+ years</span>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="js">
-                            <div class="skill-icon">
-                                <i class="fab fa-js-square"></i>
-                            </div>
-                            <h3>JavaScript</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="88"></div>
-                            </div>
-                            <div class="skill-details">
-                                <span class="skill-level">Advanced</span>
-                                <span class="skill-years">2+ years</span>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="css">
-                            <div class="skill-icon">
-                                <i class="fab fa-css3-alt"></i>
-                            </div>
-                            <h3>CSS</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="92"></div>
-                            </div>
-                            <div class="skill-details">
-                                <span class="skill-level">Expert</span>
-                                <span class="skill-years">2+ years</span>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="java">
-                            <div class="skill-icon">
-                                <i class="fab fa-java"></i>
-                            </div>
-                            <h3>Java</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80"></div>
-                            </div>
-                            <div class="skill-details">
-                                <span class="skill-level">Intermediate</span>
-                                <span class="skill-years">2+ years</span>
-                            </div>
-                        </div>
-                        <div class="skill-card" data-skill="spring">
-                            <div class="skill-icon">
-                                <i class="fas fa-leaf"></i>
-                            </div>
-                            <h3>Spring Boot</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="78"></div>
-                            </div>
-                            <div class="skill-details">
-                                <span class="skill-level">Intermediate</span>
-                                <span class="skill-years">2+ years</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="scroll-indicator">
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-arrow">
+              <i class="fas fa-chevron-down"></i>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Featured Projects</h2>
-                    <div class="title-line"></div>
-                </div>
-                <div class="projects-container">
-                    <div class="projects-carousel">
-                        <div class="project-card active">
-                            <div class="project-image">
-                                <div class="project-overlay">
-                                    <div class="project-tech">
-                                        <span class="tech-tag">React.js</span>
-                                        <span class="tech-tag">Spring Boot</span>
-                                        <span class="tech-tag">Postgresql</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h3>Lab Management</h3>
-                                <p>Comprehensive laboratory management system with real-time data tracking and reporting capabilities.</p>
-                                <div class="project-details">
-                                    <div class="tech-stack">
-                                        <span class="tech-label">Frontend:</span> React.js
-                                    </div>
-                                    <div class="tech-stack">
-                                        <span class="tech-label">Backend:</span> Spring Boot
-                                    </div>
-                                    <div class="tech-stack">
-                                        <span class="tech-label">Database:</span> Postgresql
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-image">
-                                <div class="project-overlay">
-                                    <div class="project-tech">
-                                        <span class="tech-tag">Reactive Spring</span>
-                                        <span class="tech-tag">Backend</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h3>Billing Software</h3>
-                                <p>Advanced billing software solution with automated invoice generation and payment processing.</p>
-                                <div class="project-details">
-                                    <div class="tech-stack">
-                                        <span class="tech-label">Backend only:</span> Reactive Spring Developer
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-image">
-                                <div class="project-overlay">
-                                    <div class="project-tech">
-                                        <span class="tech-tag">Spring Boot</span>
-                                        <span class="tech-tag">Backend</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-content">
-                                <h3>ERP Software</h3>
-                                <p>Enterprise Resource Planning system for comprehensive business management and operations.</p>
-                                <div class="project-details">
-                                    <div class="tech-stack">
-                                        <span class="tech-label">Backend only:</span> Spring Boot
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-controls">
-                        <button class="carousel-btn prev">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <button class="carousel-btn next">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
-                </div>
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <div class="title-line"></div>
+          </div>
+
+          <div class="about-content">
+            <div class="about-text">
+              <div class="intro-text">
+                <h3>Passionate Frontend Developer</h3>
+
+                <p>
+                  I am a dedicated Frontend Developer with over 2.9 years of
+                  professional experience at Huewine Technologies. I specialize
+                  in building responsive, scalable, and user-friendly web
+                  applications using modern frontend technologies.
+                </p>
+
+                <p>
+                  I have worked on real-time projects including eCommerce and
+                  Lab Management systems, gaining strong experience in designing
+                  intuitive UI and handling dynamic data-driven applications.
+                </p>
+
+                <p>
+                  My core skills include React JS, TypeScript, Redux Toolkit,
+                  HTML, CSS, and Tailwind CSS, along with strong experience in
+                  integrating REST APIs and optimizing application performance.
+                </p>
+              </div>
             </div>
-        </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Get In Touch</h2>
-                    <div class="title-line"></div>
+            <div class="about-timeline">
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+
+                <div class="timeline-content">
+                  <h4>Frontend Developer</h4>
+                  <h5>Huewine Technologies</h5>
+                  <span class="timeline-date">2023 - Present</span>
+
+                  <p>
+                    Developing and maintaining enterprise-level web applications
+                    with a focus on UI performance, scalability, and enhanced
+                    user experience.
+                  </p>
                 </div>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Let's work together</h3>
-                        <p>
-                            I'm always interested in new opportunities and exciting projects. 
-                            Whether you need web development or app development services, 
-                            I'd love to hear from you!
-                        </p>
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <span>rreshmaa6@gmail.com</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Available for Remote Work</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="contact-form">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="title-line"></div>
+          </div>
+          <div class="skills-container">
+            <div class="skills-grid">
+              <div class="skill-card" data-skill="html">
+                <div class="skill-icon">
+                  <i class="fab fa-html5"></i>
+                </div>
+                <h3>HTML</h3>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
+                </div>
+                <div class="skill-details">
+                  <span class="skill-level">Expert</span>
+                  <span class="skill-years">2+ years</span>
+                </div>
+              </div>
+              <div class="skill-card" data-skill="react">
+                <div class="skill-icon">
+                  <i class="fab fa-react"></i>
+                </div>
+                <h3>React</h3>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="85"></div>
+                </div>
+                <div class="skill-details">
+                  <span class="skill-level">Advanced</span>
+                  <span class="skill-years">2+ years</span>
+                </div>
+              </div>
+              <div class="skill-card" data-skill="js">
+                <div class="skill-icon">
+                  <i class="fab fa-js-square"></i>
+                </div>
+                <h3>JavaScript</h3>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="88"></div>
+                </div>
+                <div class="skill-details">
+                  <span class="skill-level">Advanced</span>
+                  <span class="skill-years">2+ years</span>
+                </div>
+              </div>
+              <div class="skill-card" data-skill="css">
+                <div class="skill-icon">
+                  <i class="fab fa-css3-alt"></i>
+                </div>
+                <h3>CSS</h3>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="92"></div>
+                </div>
+                <div class="skill-details">
+                  <span class="skill-level">Expert</span>
+                  <span class="skill-years">2+ years</span>
+                </div>
+              </div>
+              <div class="skill-card" data-skill="java">
+                <div class="skill-icon">
+                  <i class="fab fa-java"></i>
+                </div>
+                <h3>Java</h3>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
+                </div>
+                <div class="skill-details">
+                  <span class="skill-level">Intermediate</span>
+                  <span class="skill-years">6 month</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+    <section id="projects" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="projects-container">
+      <div class="projects-carousel">
+
+        <!-- Lab Management -->
+        <div class="project-card active">
+          <div class="project-image">
+            <img
+              src="lab.jpeg"
+              alt="Lab Management preview"
+              class="project-screenshot"
+            />
+            <div class="project-overlay">
+              <div class="project-tech"></div>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <h3>Lab Management</h3>
+            <p>
+              Developed a laboratory management system with real-time data tracking, 
+              sample management, and reporting features to improve workflow efficiency.
+            </p>
+          </div>
+        </div>
+
+        <!-- eCommerce -->
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="download.jpeg"
+              alt="eCommerce preview"
+              class="project-screenshot"
+            />
+            <div class="project-overlay">
+              <div class="project-tech"></div>
+            </div>
+          </div>
+
+       <div class="project-content">
+  <h3>ECommerce Admin Panel</h3>
+  <p>
+    Built a responsive eCommerce admin panel for managing products, categories, 
+    orders, customers, and inventory, improving overall business operations and workflow efficiency.
+  </p>
+</div>
+
+      </div>
+
+      <div class="carousel-controls">
+        <button class="carousel-btn prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-btn next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- College Section -->
+      <section id="college" class="section college-section">
+       <div class="container">
+  <div class="section-header">
+    <h2 class="section-title">Education</h2>
+    <div class="title-line"></div>
+  </div>
+
+  <div class="college-grid">
+    <!-- B.Com -->
+    <div class="college-card">
+      <div class="college-info">
+        <h3>B.Com (Bachelor of Commerce)</h3>
+        <p class="college-name">Annai Velankanni College, Tholayavattam</p>
+        <p class="college-years">2018 – 2021</p>
+      </div>
+      <div class="college-gallery" data-gallery="annai">
+        <img
+          src="a.jpeg"
+          alt="Annai Velankanni College campus"
+          class="gallery-image active"
+        />
+        <img
+          src="n.jpeg"
+          alt="Annai Velankanni College building"
+          class="gallery-image"
+        />
+         <img
+          src="nn.jpeg"
+          alt="Annai Velankanni College facilities"
+          class="gallery-image"
+        />
+        <img
+          src="i.jpeg"
+          alt="Annai Velankanni College facilities"
+          class="gallery-image"
+        />
+        <div class="gallery-overlay"></div>
+      </div>
+    </div>
+
+    <!-- MBA -->
+    <div class="college-card">
+      <div class="college-info">
+        <h3>MBA (Master of Business Administration)</h3>
+        <p class="college-name">Scott Christian College, Nagercoil</p>
+        <p class="college-years">2021 – 2023</p>
+      </div>
+      <div class="college-gallery" data-gallery="scott">
+        <img
+          src="s.jpeg"
+          alt="Scott Christian College campus"
+          class="gallery-image active"
+        />
+        <img
+          src="c.jpeg"
+          alt="Scott Christian College building"
+          class="gallery-image"
+        />
+        <div class="gallery-overlay"></div>
+      </div>
+    </div>
+  </div>
+</div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="title-line"></div>
+          </div>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Let's work together</h3>
+              <p>
+                I'm always interested in new opportunities and exciting
+                projects. Whether you need web development or app development
+                services, I'd love to hear from you!
+              </p>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <span>abishsabi31@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Available for Remote Work</span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="contact-form">
                         <form id="contactForm">
                             <div class="form-group">
                                 <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -388,11 +484,11 @@
                             </button>
                         </form>
                     </div> -->
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
